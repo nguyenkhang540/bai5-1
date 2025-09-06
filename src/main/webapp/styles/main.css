@@ -1,0 +1,145 @@
+
+.brg {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #cccccc(135deg, #f59e0b, #d97706);
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px
+}
+
+.form-card {
+    background: #fff;
+    padding: 2.5em 3em;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+    max-width: 650px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn .6s ease
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;
+        transform: translateY(15px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+}
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1)
+}
+
+h1 {
+    color: #f59e0b;
+    margin-bottom: .3em;
+    font-size: 2em
+}
+
+h2 {
+    color: #f59e0b;
+    margin: 1.8em 0 .6em;
+    text-align: left;
+    font-size: 1.2em;
+    border-left: 4px solid #004080;
+    padding-left: 8px
+}
+
+p {
+    color: #333;
+    font-size: 15px;
+    line-height: 1.5
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 8px 0 4px;
+    font-weight: bold;
+    color: #333
+}
+
+input[type="text"], input[type="email"], input[type="date"], select {
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 14px;
+    transition: border .3s, box-shadow .3s;
+    font-size: 14px
+}
+
+input:focus, select:focus {
+    border: 1px solid #004080;
+    box-shadow: 0 0 8px rgba(0, 64, 128, .5);
+    outline: none
+}
+
+.options {
+    text-align: left;
+    margin: 8px 0
+}
+
+.options label {
+    display: block;
+    margin: 6px 0;
+    font-weight: normal;
+    cursor: pointer;
+    color: #333
+}
+
+#submit {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform .2s ease, background .3s ease;
+    margin-top: 15px
+}
+
+#submit:hover {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    transform: translateY(-2px)
+}
+
+.user-info {
+    text-align: left;
+    margin: 10px 0 20px;
+    padding-left: 18px;
+    list-style: disc
+}
+
+.user-info li {
+    margin-bottom: 6px;
+    font-size: 15px;
+    color: #333
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 20px;
+    background: #004080;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background .3s ease, transform .2s ease
+}
+
+.back-link:hover {
+    background: #0059b3;
+    transform: translateY(-2px)
+}
